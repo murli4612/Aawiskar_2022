@@ -2,47 +2,115 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb0fa6a6-3ad4-43c3-9efd-874010e0a218" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0004_vendor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0005_farmer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0006_auto_20220527_1133.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0007_auto_20220527_1232.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0008_remove_booked_customer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0009_product_vendor_name.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0010_product_vendor_location.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0011_product_capacity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0012_product_features.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0013_product_flight_time.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0014_product_drone_range.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0015_auto_20220529_0111.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0016_farmers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0017_auto_20220602_1346.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/css/homestyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/23942502.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/4050617.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/4050629.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/4050900.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/Banner-Online-Farmers-Marketplace-min.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/ad00a99f967d20ec0adb029499ab336a.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/banner1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/banner12.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/banner2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/banners.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/drone-farming-og.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/dronesruslan-ivantsovsstock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/homebanner_logomaker-053022-1137-9841-2000-transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/logo-053022-1137-6176-2000-transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/logo-053022-1137-6176.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/new-053022-1651-8899.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/new_logo-053022-1647-9595.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/onlinelogomaker-053022-1137-6176-500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/onlinelogomaker-053022-1137-6176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-anton-atanasov-221016.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-arnauld-van-wambeke-8658730.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-flo-maderebner-2281073.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-jeshootscom-442589.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-johannes-plenio-1423597.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-k-photos-744366.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-peter-fazekas-887862.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-peter-fazekas-997131.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-pixabay-163752.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-pixabay-235829.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-pok-rie-3268263.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/pexels-tom-fisk-1595104.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/smalllogomaker-053022-1137-6176.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/images/worm-svgrepo-com.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/drones.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/farmerregistration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/payment_conformation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/vender_empty.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/venderaddproduct.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/venderregistration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/vendorlogin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/amigopage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/booking.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/farmerpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/products_drones.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/services.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/transport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/1000_F_235809120_BTrvr9PbO5KuHkKnwDEIpeIT03KgtZUv.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/DJI-Agras-T30-sprayer-drone-price-and-buy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/DJI-Agras-T30-sprayer-drone-price-and-buy_EhgoS5q.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/H4_vRxI0R5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/PrecisionHawks-BVLOS-Drone (1).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/PrecisionHawks-BVLOS-Drone.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/PrecisionHawks-BVLOS-Drone_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/PrecisionHawks-BVLOS-Drone_1_OB9fgdH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/T2_sFEa908.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/T3_grv5dFD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/agricultural-drone-1000x1000.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/agricultural-sprayers-500x500.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/agricultural-sprayers-500x500_5O4AgEN.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/agricultural-sprayers-500x500_gjf1UYf.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/agricultural-sprayers-500x500_w743cOD.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/agricultural-sprayers-500x500_w743cOD_hx6XXDh.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/farmer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/mv8i_8a2w_210609.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/mv8i_8a2w_210609.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/pexels-juergen-striewski-4394883.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/pexels-quang-nguyen-vinh-2132171.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/pexels-quang-nguyen-vinh-2132171_ZVaPLa9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/quadrocopter_flying_over_field_6_fmt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/quadrocopter_flying_over_field_6_fmt_eQbxNh4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aawiskar/media/productimg/quadrocopter_flying_over_field_6_fmt_vx15mA3.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Aawiskar/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Aawiskar/asgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Aawiskar/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Aawiskar/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Aawiskar/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Aawiskar/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Aawiskar/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Aawiskar/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0002_auto_20220516_2311.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0002_auto_20220516_2311.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0003_auto_20220517_1128.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/migrations/0003_auto_20220517_1128.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/js/myscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/static/Jai_Kisan/js/myscript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/Vedorlogin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/address.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/address.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/addtocart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/addtocart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/base1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/base1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/booked.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/booked.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/customerregistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/customerregistration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/editprofile.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/emptycart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/emptycart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/mobile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/mobile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/passwordchange.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/passwordchange.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/passwordchangedone.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/passwordchangedone.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/productdetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/productdetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/tracter.html" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/tracter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/tracter.html.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/tracter.html.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/harvest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/vender_emptycart.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/templates/Jai_Kisan/venderadd.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/Jai_Kisan/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Aawiskar/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aawiskar/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Aawiskar/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
