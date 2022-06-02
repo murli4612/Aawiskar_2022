@@ -1,0 +1,77 @@
+{% extends 'Jai_Kisan/base1.html' %}
+{% load static %}
+{% block title %}Login{% endblock title %}
+{% block main-content %}
+
+
+
+<div class="container bg-white">
+<div class="row my-3">
+  <div class="col-sm-6 offset-sm-3">
+    
+   <h1 class="text-success ">Services Booked Successfully</h1>
+   <h4 class="text-primary">Our Technician will reachout to you on the booked date and provide assistance happily.</h4>
+   <h3 class="display-6 text-success">Thank you for using EarthWorm!</h3>
+   
+   <hr>
+   
+   <div class="row row-cols-1 row-cols-md-2">
+    <div class="col mb-4">
+      <div class="card bg-light"> 
+       <!-- <img src="..." class="card-img-top" alt="...">  -->
+        <div class="card-body">
+          <h5 class="card-title">Shippment address :</h5>
+          <p class="card-text">An Email with your Tax Invoice has been sent to your email address. If you haven't recieved an email within 10 minutes, please check your spam folder.</p>
+          <h6>Booking ID: <h6 class="card-subtitle mb-2 text-muted">c45765-daf5-9786-b576</h6></h6>
+          <h6>Address : <h6 class="card-subtitle mb-2 text-muted">NH 77,BHUTAHI,DISTRICT-SITAMARHI,BIHAR-843317</h6></h6>
+          <h6>Contact : <h6 class="card-subtitle mb-2 text-muted">9876543215</h6></h6>
+          <h6>Email ID : <h6 class="card-subtitle mb-2 text-muted">manoharmk@gmail.com</h6></h6>
+          {% for c in custdata %}
+          <p class="card-text">Name: {{c.name}}</p>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="col mb-4">
+      <div class="card bg-light">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">Vendor address :</h5>
+          <h6>Booking ID: <h6 class="card-subtitle mb-2 text-muted">c45765-daf5-9786-b576</h6></h6>
+          <h6>Vendor Name : <h6 class="card-subtitle mb-2 text-muted">Erisha Agritech Private Limited,NH 83,BHUTAHI,DISTRICT-BAGALPUR,BIHAR-843319</h6></h6>
+          <h6>Contact : <h6 class="card-subtitle mb-2 text-muted">9876543215</h6></h6>
+          <h6>Email ID : <h6 class="card-subtitle mb-2 text-muted">enquire@erisha.com</h6></h6>
+          <p class="card-text"></p>
+        </div>
+      </div>
+      <br>
+      <button type="button" class="btn btn-success">Check Status of your Bookings</button>
+    </div>
+  </div>
+  
+  
+  
+<!--   <form action="" method="post" novalidate class="shadow p-5">-->
+<!--     {% csrf_token %}-->
+<!--     {% for fm in form %}-->
+<!--      <div class="form-group">-->
+<!--      {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.errors|striptags}}</small> <br>-->
+<!--      </div>-->
+<!--     {% endfor %}-->
+<!--     <small><a href="{% url 'password_reset' %}">Forgot Password ?</a></small> <br>-->
+<!--     <input type="submit" class="btn btn-primary mt-4" value="Login">-->
+<!--     <br>-->
+<!--     <div class="text-center text-primary fw-bold"><small>Jai_Kisan? <a href="{% url 'customerregistration' %}" class="text-danger">Create an Account</a> </small></div>-->
+<!--       -->
+<!--     {% if form.non_field_errors %}-->
+<!--      {% for error in form.non_field_errors %}-->
+<!--       <p class="alert alert-danger my-3">{{error}}</p>-->
+<!--      {% endfor %}-->
+<!--     {% endif %}-->
+<!--    </form>-->
+  </div>
+</div>
+</div>
+{% endblock main-content %}
+
+

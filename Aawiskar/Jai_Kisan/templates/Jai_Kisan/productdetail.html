@@ -2,44 +2,134 @@
 {% load static %}
 {% block title %}Product Detail{% endblock title %}
 {% block main-content %}
+
+
 <div class="container my-5">
- <div class="row">
-  <div class="col-sm-6 text-center align-self-center">
-   <img src="{{product.product_image.url}}" alt="" class="img-fluid img-thumbnail">
-  </div>
-  <div class="col-sm-5 offset-sm-1">
-   <h2>{{product.title}}</h2>
-   <hr>
-   <p>{{product.description}}</p> <br>
-   <h4>Rs. {{product.discounted_price}} <small class="fw-light text-decoration-line-through">{{product.selling_price}}</small></h4> <br>
+  <div class="row">
+   <div class="col-sm-6 text-center align-self-center">
+    <img src="{{product.product_image.url}}" alt="" class="img-fluid img-thumbnail">
+    </div>
+   <div class="col-sm-5 offset-sm-1">
+    <h2>{{product.title}}</h2>
+    <hr>
+    <p>{{product.description}}</p> <br>
+    <div class="row">
+      <div class="col-sm-6">
+    <h6>Enter the booking date</h6>
+    <input type="date" id="start" name="trip-start"
+       value=" "
+       min="2018-01-01" max="9999-12-31">
+       <p></p>
+       <h6>Enter Farm Area(in Hectare)</h6>
+       <input type="number" required name="price" min="0" value="0" step="any">
+      </div>
+      <form  action="{% url 'product-detail' product.id %}" method="post">
+        {% csrf_token %}
+      <div class="col-sm-6">
+        
+        <div class="form-check  form-switch">
+        
+          <input class="form-check-input" value="technician charge" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+          <label class="form-check-label"  for="flexSwitchCheckChecked">Technician support</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" value="food supply" type="checkbox" role="switch" id="flexSwitchCheckDisabled" unchecked />
+          <label class="form-check-label" for="flexSwitchCheckDisabled">Food Supply</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" value="fuel charge" type="checkbox" role="switch" id="flexSwitchCheckDisabled" unchecked />
+          <label class="form-check-label" for="flexSwitchCheckDisabled">Fuel Charges</label>
+        </div>
+        <div class="form-outline">
+          <label class="form-label" for="typeText">Enter Farm Location :</label>
+          <input type="text" id="typeText" class="form-control"/>
+        </div>
+      </div>
+    </form>
+      
 
-   {% if user.is_authenticated  %}
-    {% if item_already_in_cart  %}
-     <a href="{% url 'showcart' %}" class="btn btn-warning shadow px-5 py-2 ms-4">Go to Cart</a>
-    {% else %}
-     <form action="/add-to-cart" class="d-inline">
-      <input type="hidden" name="prod_id" value="{{product.id}}" id="prod_id">
-      <button type="submit" class="btn btn-primary shadow px-5 py-2">Add to Cart</button>
-     </form>
+      </div>
+    <h4>Rs. {{product.discounted_price}} <small class="fw-light text-decoration-line-through">{{product.selling_price}}</small></h4> <br>
+     
+    {% if user.is_authenticated  %}
+     {% if item_already_in_cart  %}
+      <a href="{% url 'showcart' %}" class="btn btn-success shadow px-5 py-2 ms-4">Go to Cart</a>
+     {% else %}
+      <form action="/add-to-cart" class="d-inline">
+       <input type="hidden" name="prod_id" value="{{product.id}}" id="prod_id">
+       <button type="submit" class="btn btn-success shadow px-5 py-2">Confirm Service</button>
+      </form>
+     {% endif %}
     {% endif %}
-   {% endif %}
-
-   {% if not request.user.is_authenticated %}
-     <form action="/add-to-cart" class="d-inline">
-      <input type="hidden" name="prod_id" value="{{product.id}}" id="prod_id">
-      <button type="submit" class="btn btn-primary shadow px-5 py-2">Add to Cart</button>
-     </form>
-   {% endif %}
-
-
-
-   <a href="{% url 'checkout' %}" class="btn btn-danger shadow px-5 py-2 ms-4">Check out Now</a>
-   <h5 class="mt-5">Available Offers</h5>
-   <ul>
-    <li>Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit</li>
-    <li>Special Price Get extra ₹3000 off (price inclusive of discount)</li>
-   </ul>
+ 
+    {% if not request.user.is_authenticated %}
+      <form action="/add-to-cart" class="d-inline">
+       <input type="hidden" name="prod_id" value="{{product.id}}" id="prod_id">
+       <button type="submit" class="btn btn-success shadow px-5 py-2">Confirm Service</button>
+      </form>
+    {% endif %}
+ 
+ 
+ 
+    <a href="{% url 'checkout' %}" class="btn btn-danger shadow px-5 py-2 ms-4">Confirm Booking Now</a>
+    <h5 class="mt-5">Available Offers</h5>
+    <ul>
+     <li>Bank Offer 5% Unlimited Cashback on Flipkart Axis Bank Credit</li>
+     <li>Special Price Get extra ₹3000 off (price inclusive of discount)</li>
+    </ul>
+    <button type="submit" class="btn btn-success shadow px-5 py-2">Contact Vendor</button>
+   </div>
   </div>
  </div>
+ <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Technical Specifications</h1>
+    <p class="lead">{{product.description}}</p>
+    <table class="table">
+      <!-- <h4>Technical Specifications :</h4> -->
+     <tbody>
+         <tr>
+            <td class="success">Machine Quality: </td>
+            <td>Excellent</td>
+        </tr>
+         <tr>
+             <td class="success">Manufacturer: </td>
+             <td>{{product.brand}}</td>
+         </tr>
+         <tr>
+          <td class="success">Range: </td>
+          <td>{{product.drone_range}}</td>
+      </tr>
+         <tr>
+             <td class="success">Capacity: </td>
+             <td>{{product.capacity}}</td>
+         </tr>
+         <tr>
+             <td class="success">Features: </td>
+             <td>{{product.features}}</td>
+         </tr>
+         <tr>
+             <td class="success">flight Time: </td>
+             <td>{{product.flight_time}}</td>
+         </tr>
+         <tr>
+             <td class="success">Screen-to-body-ratio: </td>
+             <td>76.09%</td>
+         </tr>
+         <tr>
+             <td class="success">Display: </td>
+             <td>Scratch-resistant glass (Corning Gorilla Glass 4), Light sensor, Proximity sensor</td>
+         </tr>
+     </tbody>
+   </table>
+
+  </div>
 </div>
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        
+  <a class="text-white" href=""></a>
+</div>
+
+
+
 {% endblock main-content %}

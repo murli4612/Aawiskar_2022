@@ -1,0 +1,119 @@
+{% extends 'Jai_Kisan/base1.html' %}
+{% load static %}
+{% block title %}Mobile{% endblock title %}
+{% block main-content %}
+<small class="text-black">Showing Results for your location:</small>
+<!-- <div class="container my-5">
+ <div class="row">
+  <div class="col-sm-3">
+   <div class="list-group">
+     <a href="{% url 'drones' %}" class="list-group-item list-group-item-action" aria-current="true">All Drones</a>
+     <a href="{% url 'dronesdata' 'Tata'  %}" class="list-group-item list-group-item-action" aria-current="true">Tata</a>
+     <a href="{% url 'dronesdata' 'Mahindra'  %}" class="list-group-item list-group-item-action">Mahindra</a>
+   </div>
+  </div>
+  <div class="col-sm-8">
+   <div class="row"> -->
+    {% for product in products %}
+    <div class="row justify-content-center mb-3">
+      <div class="col-md-12 col-xl-10">
+        <div class="card shadow-0 border rounded-3">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12 col-lg-3 col-xl-3 mb-4 mb-lg-0">
+                <div class="bg-image hover-zoom ripple rounded ripple-surface">
+                  <img src="{{product.product_image.url}}"
+                    class="w-100" />
+                  <a href="#!">
+                    <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-xl-6">
+                <h5>{{product.title}}</h5>
+                <small>{{product.brand}}</small>
+                <div class="d-flex flex-row">
+                  <div class="text-danger mb-1 me-2">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <span>310</span>
+                </div>
+                <div class="mt-1 mb-0 text-muted small">
+                  <span class="text-dark"> • Capacity: </span>
+                  <span>{{product.capacity}} L</span>
+                  <span class="text-dark"> • Flight Time: </span>
+                  <span>{{product.flight_time}} hrs</span>
+                  <span class="text-dark"> • Drone Range: </span>
+                  <span>{{product.drone_range}} KM<br /></span>
+                  <span class="text-dark">• Features: {{product.features}}</span>
+                </div>
+                <div class="mb-2 text-muted small">
+                  <span>Square Tube</span>
+                  <span class="text-primary"> • </span>
+                  <span>Large Capacity</span>
+                  <span class="text-primary"> • </span>
+                  <span>Easy Handling<br /></span>
+                </div>
+                <p class="text-truncate mb-4 mb-md-0">
+                  {{product.description}}
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-3 col-xl-3 border-sm-start-none border-start">
+                <div class="d-flex flex-row align-items-center mb-1">
+                  <h4 class="mb-1 me-1">Rs. {{product.discounted_price}}/day</h4>
+                  <span class="text-danger"><s>Rs. {{product.selling_price}}/day</s></span>
+                </div>
+                <!-- <h6 class="text-success">Free shipping</h6> -->
+                <div class="d-flex flex-column mt-4">
+                  <!-- <a href="{% url 'booking' %}"> -->
+                      <!-- <button class="btn btn-primary btn-sm" type="button">Book</button> -->
+                      <a href="{% url 'product-detail' product.id %}" class="btn btn-success" role="button">Rent Service</a>
+                  <!-- </a> -->
+                  <button class="btn btn-outline-success btn-sm mt-2" type="button">
+                    Add to wishlist
+                  </button>
+                  <br>
+                  <h5>Vendor Location</h5>
+                  <small>{{product.vendor_location}}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--    -->
+     <!-- <div class="col-sm-4 text-center mb-4">
+      <a href="{% url 'product-detail' product.id %}" class="btn">
+       <div class="item">
+        <img src="{{product.product_image.url}}" alt="" height="300" class="">
+        <div class="fw-bold">{{product.title}}</div>
+        <div class="fw-bold">Rs. {{product.discounted_price}} <small class="fw-light text-decoration-line-through">{{product.selling_price}}</small></div>
+       </div>
+      </a>
+     </div> -->
+    {% endfor %}
+   </div>
+  </div>
+ </div>
+</div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+{% endblock main-content %}

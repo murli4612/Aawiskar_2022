@@ -1,0 +1,121 @@
+{% extends 'Jai_Kisan/base1.html' %}
+{% load static %}
+{% block title %}Cart{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+{% comment %} Below Code will be used by add_to_cart view {% endcomment %}
+{% if messages %}
+{% for message in messages %}
+  <p {% if message.tags %} class="alert alert-{{message.tags}} mb-5" {% endif %}>{{message}}</p>
+{% endfor %}
+{% endif %}
+<div class="row">
+  <h1 class="text-center mb-5">Vedor adding their product</h1>
+  <div class="col-sm-8">
+  <div class="card">
+   <div class="card-body">
+    <h3>Product List</h3>
+    {% for cart in cart_product %}
+    <hr>
+    <div class="row">
+     <div class="col-sm-3 text-center align-self-center"><img src="{{cart.product.product_image.url}}" alt="" srcset="" class="img-fluid img-thumbnail shadow-sm" height="150" width="150"> </div>
+     <div class="col-sm-9">
+      <div>
+       <h5>{{cart.product.title}}</h5>
+       <p class="mb-2 text-muted small">{{cart.product.description}}</p>
+       <div class="my-3">
+        <label for="duration">Category:</label>
+<!--        <a class="minus-cart btn" pid="cart.product.id"><i class="fas fa-minus-square fa-lg"></i></a>-->
+          <span id="duration">{{cart.category}}</span>
+<!--        <a class="plus-cart btn" pid="cart.product.id"><i class="fas fa-plus-square fa-lg"></i></a>-->
+       </div>
+       <div class="d-flex justify-content-between">
+        <a class="btn btn-sm btn-secondary mr-3 remove-item" pid={{cart.product.id}}>Remove item </a>
+        <p class="mb-0"><span>Rent/day:<strong>Rs. {{cart.product.selling_price}}</strong></span></p>
+       </div>
+      </div>
+
+     </div>
+    </div>
+
+    {% endfor %}
+   </div>
+   </div>
+  </div>
+
+  <div class="col-sm-4">
+   <div class="card">
+    <div class="card-body">
+      <h3>To add product</h3>
+      <ul class="list-group">
+<!--       <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">Amount<span>Rs. <span id="amount">{{amount|floatformat:2}}</span> </span></li>-->
+<!--       <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0">Shipping<span>Rs. 70.00</span></li>-->
+       <hr>
+          <form  action="{% url 'vender-add-product' %}" method="post">
+             {% csrf_token %}
+
+<!--           <div class="col-md-12 form-group p_star">-->
+<!--               <h4>Select the product</h4>-->
+<!--                  <select class="country_select" name='category'>-->
+<!--                    <option value="1" disabled selected>Product</option>-->
+<!--                    {% for cat in Product_list%}-->
+<!--                    <option value="{{cat.category}}">{{cat.category}}</option>-->
+<!--                    {% endfor %}-->
+<!--                  </select>-->
+<!--              </div>-->
+<!--            <br>-->
+
+<!--              <div class="col-md-12 form-group p_star">-->
+<!--                  <h4>Select the Brand</h4>-->
+<!--                  <select class="country_select" name='sub_category'>-->
+<!--                    <option value="1" disabled selected>Brand</option>-->
+<!--                    {% for subcat in Product_list%}-->
+<!--                    <option value="{{subcat.brand}}">{{subcat.brand}}</option>-->
+<!--                    {% endfor %}-->
+<!--                  </select>-->
+<!--              </div>-->
+<!--                 <div>-->
+                 <h1> Seleted the product</h1>
+                   <select id ="select" name ="select1"class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                      <option selected>Select the Product</option>
+                      <option value="Tracter">Tracter</option>
+                      <option value="Boring Machine">Boring Machine</option>
+                      <option value="Harvestor">Harvestor</option>
+                      <option value="Cultivator">Cultivator</option>
+                      <option value="Drones">Drones</option>
+                   </select>
+                 <br>
+                  <h1> Seleted the brand</h1>
+                  <select id ="select2" name="select2" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                   <option selected>Select the Brand</option> -->
+                   <option value="AeroVironment Inc.">AeroVironment Inc.</option>
+                   <option value="Mahindra">Mahindra</option>
+                   <option value="Swaraj">Swaraj</option>
+                    <option value="Force Motors">Force Motors</option>
+                    <option value="DJI Mavik">DJI Drones</option> -->
+                    </select> 
+             </div>
+            <br>
+            <button  type="submit" value="Signup" class="btn d-grid btn-danger fw-bold">Click on add product</button>
+           </form>
+      </ul>
+    </div>
+   </div>
+  </div>
+
+</div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-sm-8">
+   <div class="card">
+    <div class="card-body">
+      <h5 class="mb-4">We accept</h5>
+      <img src="{% static 'Jai_Kisan/images/payment.png' %}" alt="" class="img-fluid">
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+{% endblock main-content %}
+

@@ -2,6 +2,7 @@
 {% load static %}
 {% block title %}Cart{% endblock title %}
 {% block main-content %}
+
 <div class="container my-5">
  {% comment %} Below Code will be used by add_to_cart view {% endcomment %}
  {% if messages %}
@@ -10,7 +11,7 @@
  {% endfor %}
  {% endif %}
  <div class="row">
-  <h1 class="text-center mb-5">Farming Boking Cart</h1>
+  <h1 class="text-center mb-5">Booking Services Cart</h1>
   <div class="col-sm-8">
   <div class="card">
    <div class="card-body">
@@ -24,7 +25,7 @@
        <h5>{{cart.product.title}}</h5>
        <p class="mb-2 text-muted small">{{cart.product.description}}</p>
        <div class="my-3">
-        <label for="duration">Duration:</label>
+        <label for="duration">Duration(in Days):</label>
         <a class="minus-cart btn" pid="{{cart.product.id}}"><i class="fas fa-minus-square fa-lg"></i></a>
           <span id="duration">{{cart.duration}}</span>
         <a class="plus-cart btn" pid="{{cart.product.id}}"><i class="fas fa-plus-square fa-lg"></i></a>
@@ -58,7 +59,7 @@
          <span><strong>Rs. </strong><strong id="totalamount"> {{totalamount|floatformat:2}}</strong></span>
        </li>
       </ul>
-      <div class="d-grid"><a href="{% url 'checkout' %}" class="btn btn-danger fw-bold">Book Order</a></div>
+      <div class="d-grid"><a href="{% url 'checkout' %}" class="btn btn-danger fw-bold">Book Service</a></div>
     </div>
    </div>
   </div>
