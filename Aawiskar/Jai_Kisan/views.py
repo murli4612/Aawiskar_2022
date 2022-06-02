@@ -149,7 +149,7 @@ def checkout(request):
 @login_required
 def Booked_placed(request):
 	op = Booked.objects.filter(user=request.user)
-	return render(request, 'Jai_Kissan/booked.html', {'Booked':op})
+	return render(request, 'Jai_Kisan/booked.html', {'Booked':op})
 
 def tracter(request, data=None):
 	totalitem = 0
@@ -235,16 +235,19 @@ class ProfileView(View):
 @login_required
 def payment_done(request):
 	print("murli")
-	custid = request.GET.get('custid')
-	print("Customer ID", custid)
-	user = request.user
-	cartid = Item.objects.filter(user = user)
-	customer = Customer.objects.get(id=custid)
+	# custid = request.GET.get('custid')
+	# print("Customer ID", custid)
+	User = request.user
+	print(User)
+	cartid = Item.objects.filter(user = User)
+	print(cartid)
+	customer = Customer.objects.get(user=User)
 	print(customer)
-	# for cid in cartid:
-	# 	Booked(user=user,product=cid.product, quantity=cid.duration).save()
-	# 	print("Order Saved")
-	# 	cid.delete()
-	# 	print("Cart Item Deleted")
-	return render(request, 'Jai_Kisan/home.html')
-	# return redirect("Booked")
+	for cid in cartid:
+		print("manohar")
+		Booked(user=User,customer=customer,product=cid.product, duration=cid.duration).save()
+		print("Order Saved")
+		cid.delete()
+		print("Cart Item Deleted")
+	# return render(request, 'Jai_Kisan/home.html')
+	return redirect("/booked")

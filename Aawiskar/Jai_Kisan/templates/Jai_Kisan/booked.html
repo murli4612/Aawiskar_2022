@@ -12,6 +12,7 @@
   </div> <!--1st Col Closed-->
 
   <div class="col-sm-9 offset-sm-1">
+   {% csrf_token %}
   {% for op in Booked %}
    <div class="row shadow-sm mb-3">
     <div class="col-sm-2">

@@ -27,15 +27,15 @@ class CartModelAdmin(admin.ModelAdmin):
 
 @admin.register(Booked)
 class BookedModelAdmin(admin.ModelAdmin):
-    list_display = ['id', 'user', 'customer', 'customer_info', 'product', 'product_info', 'duration', 'ordered_date',
+    list_display = ['id', 'user', 'customer', 'product','product_info','customer_info','duration', 'ordered_date',
                     'status']
 
     def product_info(self, obj):
-        link = reverse("admin:app_product_change", args=[obj.product.pk])
+        link = reverse("admin:Jai_Kisan_product_change", args=[obj.product.pk])
         return format_html('<a href="{}">{}</a>', link, obj.product.title)
 
     def customer_info(self, obj):
-        link = reverse("admin:app_customer_change", args=[obj.customer.pk])
+        link = reverse("admin:Jai_Kisan_customer_change", args=[obj.customer.pk])
         return format_html('<a href="{}">{}</a>', link, obj.customer.name)
 
 

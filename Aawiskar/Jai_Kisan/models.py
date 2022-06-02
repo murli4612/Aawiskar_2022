@@ -96,6 +96,6 @@ class Booked(models.Model):
      status = models.CharField(max_length=50, choices=STATUS_CHOICES, default='Pending')
 
      # Below Property will be used by orders.html page to show total cost
-     @property
-     def total_cost(self):
-         return self.duration * self.product.discounted_price
+@property
+def total_cost(self):
+    return self.duration * self.product.discounted_price
